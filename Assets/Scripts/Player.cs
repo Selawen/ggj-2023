@@ -63,11 +63,21 @@ public class Player : MonoBehaviour
     //ChangethisPlayerType
     public void ChangePlayerType()
     {
-        if(this.PlayerType == PlayerType.Getter)
+        if (this.PlayerType == PlayerType.Getter)
+        {
             PlayerType = PlayerType.Hunter;
 
+            //Test
+            this.GetComponent<SpriteRenderer>().color = Color.yellow;
+        }
+
         else
+        {
             PlayerType = PlayerType.Getter;
+
+            //Test
+            this.GetComponent<SpriteRenderer>().color = Color.green;
+        }
     }
     #endregion
 
@@ -117,6 +127,17 @@ public class Player : MonoBehaviour
     #endregion
 
     #region PlayerInterationFunction
+    private void HittingEnemy(GameObject OtherEnemy)
+    {
+        //TODO:Make a HittingEnemy
+    }
+
+    private void GettingWater(GameObject OtherWater)
+    {
+        //TODO:Make a Getting Water
+        Destroy(OtherWater);
+    }
+
     private void OnTriggerEnter2D(Collider2D Other)
     {
         //Touch The ChangeButton
@@ -128,13 +149,13 @@ public class Player : MonoBehaviour
         //Touch The Enemy
         if (Other.CompareTag("Enemy") && this.PlayerType == PlayerType.Hunter)
         {
-
+            HittingEnemy(Other.gameObject);
         }
 
         //Touch The Water
         if (Other.CompareTag("Water") && this.PlayerType == PlayerType.Getter)
         {
-
+            GettingWater(Other.gameObject);
         }
     }
     #endregion

@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public int PlayerWaterCount = 0;
+    public int BugWaterCount = 0;
+
     public List<Player> PlayerList = new List<Player>();
     public static GameManager Ins;
 
