@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
         set { movespeed = value; }
     }
 
-    //PlayerInteration
+    //PlayerMoveMethod
     Action PlayerMove;
 
     // Start is called before the first frame update
@@ -61,9 +61,13 @@ public class Player : MonoBehaviour
     }
 
     //ChangethisPlayerType
-    public void ChangePlayerType(PlayerType Type)
+    public void ChangePlayerType()
     {
-        this.PlayerType = Type;
+        if(this.PlayerType == PlayerType.Getter)
+            PlayerType = PlayerType.Hunter;
+
+        else
+            PlayerType = PlayerType.Getter;
     }
     #endregion
 
@@ -113,25 +117,25 @@ public class Player : MonoBehaviour
     #endregion
 
     #region PlayerInterationFunction
-    //CanChangerPlayerRule
-    private void ChangePlayerRule()
-    {
-        
-    }
-
-    private void GetterRule()
-    {
-
-    }
-
-    private void HunterRule()
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D Other)
     {
-        
+        //Touch The ChangeButton
+        if(Other.CompareTag("ChangeButton"))
+        {
+            GameManager.Ins.ChangerType();
+        }
+
+        //Touch The Enemy
+        if (Other.CompareTag("Enemy") && this.PlayerType == PlayerType.Hunter)
+        {
+
+        }
+
+        //Touch The Water
+        if (Other.CompareTag("Water") && this.PlayerType == PlayerType.Getter)
+        {
+
+        }
     }
     #endregion
 }
