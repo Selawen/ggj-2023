@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum ObjectType
 {
@@ -11,6 +12,8 @@ public enum ObjectType
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private int level;
+
     public int PlayerWaterCount = 0;
     public int BugWaterCount = 0;
 
@@ -45,6 +48,15 @@ public class GameManager : MonoBehaviour
         Debug.Log((PlayerList[1].transform.position - PlayerList[0].transform.position) / 2);
         Camera.main.transform.position = PlayerList[0].transform.position +
             ((PlayerList[1].transform.position - PlayerList[0].transform.position) / 2) + new Vector3(0, 0, -10);
+    }
+
+    // call when level is completed
+    public void LevelComplete()
+    {
+        GameObject.Find("LevelManager").GetComponent<LevelManager>().LevelComplete(level);
+
+        //maybe move this later
+        SceneManager.LoadScene(0); // load main menu scene
     }
 
     //SettingFunctionGroup
