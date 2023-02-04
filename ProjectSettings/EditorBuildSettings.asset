@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelect.unity
     guid: a6e69567af0ce984f91f258558e200bf
   - enabled: 1
-    path: Assets/Scenes/Maps/Level1.unity
+    path: Assets/Scenes/Maps/Level2.unity
     guid: c46f19ad23e04a742ac0a8d913783c9f
   - enabled: 1
     path: Assets/Scenes/Maps/Big_1_Enemy_5_Water.unity
