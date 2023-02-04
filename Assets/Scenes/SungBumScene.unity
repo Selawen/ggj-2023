@@ -593,6 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a34b86ee1108a41b7072c1bfd385d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movespeed: 0
   wallMask:
     serializedVersion: 2
     m_Bits: 64
@@ -600,7 +601,6 @@ MonoBehaviour:
   FaintTime: 5
   IsFaint: 0
   PlayerType: 1
-  movespeed: 0
   MoveDir: {x: 0, y: 0}
   PlayerAnimator: {fileID: 0}
   Animators: []
@@ -1305,7 +1305,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d616d3cf48303d42814e5434cfefa28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
+  movespeed: 5
+  FaintTime: 5
+  IsFaint: 0
+  MyAI: {fileID: 0}
   wallMask:
     serializedVersion: 2
     m_Bits: 64
@@ -1321,6 +1324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb75d4fbbd147e49bd19796ca731fdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movespeed: 0
   FaintTime: 5
   IsFaint: 0
   MyAI: {fileID: 0}
@@ -1877,6 +1881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a34b86ee1108a41b7072c1bfd385d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movespeed: 0
   wallMask:
     serializedVersion: 2
     m_Bits: 64
@@ -1884,7 +1889,6 @@ MonoBehaviour:
   FaintTime: 5
   IsFaint: 0
   PlayerType: 2
-  movespeed: 0
   MoveDir: {x: 0, y: 0}
   PlayerAnimator: {fileID: 0}
   Animators: []

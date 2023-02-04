@@ -33,15 +33,12 @@ public class GameManager : SingletonMono<GameManager>
     {
         if (PlayerList.Count != 0)
         {
-            Debug.Log("Test");
-
             if (Vector2.Distance(PlayerList[0].transform.position, PlayerList[1].transform.position) / 1.8f >= MinimumSize
                 && Vector2.Distance(PlayerList[0].transform.position, PlayerList[1].transform.position) / 1.8f <= MaximumSize)
             {
                 Camera.main.orthographicSize = Vector2.Distance(PlayerList[0].transform.position, PlayerList[1].transform.position) / 1.8f;
             }
 
-            Debug.Log((PlayerList[1].transform.position - PlayerList[0].transform.position) / 2);
             Camera.main.transform.position = PlayerList[0].transform.position +
                 ((PlayerList[1].transform.position - PlayerList[0].transform.position) / 2) + new Vector3(0, 0, -10);
         }

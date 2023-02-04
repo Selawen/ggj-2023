@@ -4,15 +4,40 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    float movespeed;
+    public float MoveSpeed
     {
-        
+        get { return movespeed; }
+        set { movespeed = value; }
     }
 
-    // Update is called once per frame
-    void Update()
+    Coroutine StateCoroutine;
+
+    public void OnFaint(float FaintTime)
     {
-        
+        if (StateCoroutine == null)
+            StateCoroutine = StartCoroutine(Faint(FaintTime));
+    }
+
+    void OffFaint()
+    {
+        StopCoroutine(StateCoroutine);
+        StateCoroutine = null;
+    }
+
+    IEnumerator Faint(float FaintTime)
+    {
+        yield return null;
+
+        float BaseSpeed = MoveSpeed;
+        MoveSpeed = 0;
+
+        yield return new WaitForSeconds(FaintTime);
+
+        MoveSpeed = BaseSpeed;
+
+        OffFaint();
+        yield break;
     }
 }

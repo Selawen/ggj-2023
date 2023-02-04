@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.TerrainAPI;
 using UnityEngine;
 
 public enum PlayerNumber
@@ -13,7 +14,7 @@ public enum PlayerType
     None, Getter, Hunter
 }
 
-public class Player : MonoBehaviour
+public class Player : Unit
 {
     [SerializeField] private LayerMask wallMask;
 
@@ -30,14 +31,6 @@ public class Player : MonoBehaviour
 
     //PlayerMoveData
     [Header("PlayerMoves"), SerializeField]
-    float movespeed;
-    public float MoveSpeed
-    {
-        get { return movespeed; }
-        set { movespeed = value; }
-    }
-
-    [SerializeField]
     Vector2 MoveDir;
 
     //PlayerMoveMethod
@@ -228,7 +221,7 @@ public class Player : MonoBehaviour
 
         else if(Other.CompareTag("Enemy") && this.PlayerType == PlayerType.Getter)
         {
-
+            OnFaint(3.0f);
         }    
 
         //Touch The Water

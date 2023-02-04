@@ -2,17 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BugAI : MonoBehaviour
+public class BugAI : Unit
 {
-    [SerializeField] private int Speed = 1;
-
     private static Vector2[] directions = { Vector2.up, Vector2.down, Vector2.right, Vector2.left };
 
     private Vector2 lastDirection = Vector2.up;
 
     [SerializeField] private LayerMask wallMask;
-
-    Coroutine BugStateCoroutine;
      
     private void Start()
     {
@@ -64,7 +60,6 @@ public class BugAI : MonoBehaviour
 
         //StartCoroutine(TakeStep());
 
-        Debug.Log(lastDirection);
         StartCoroutine(MoveToGoal(lastDirection));
 
         yield break;
@@ -79,44 +74,16 @@ public class BugAI : MonoBehaviour
         while (true)
         {
             yield return null;
-            this.transform.position = Vector3.MoveTowards(this.gameObject.transform.position, GoalPos, Speed * Time.deltaTime);
+            this.transform.position = Vector3.MoveTowards(this.gameObject.transform.position, GoalPos, MoveSpeed * Time.deltaTime);
 
             if(this.transform.position == GoalPos)
             {
-                Debug.Log("Goal");
                 break;
             }
         }
 
         StartCoroutine(TakeStep());
         yield break;
-    }
-
-    public void OnFaint(float FaintTime)
-    {
-        if(BugStateCoroutine == null)
-            BugStateCoroutine = StartCoroutine(Faint(FaintTime));
-    }
-
-    void OffFaint()
-    {
-        StopCoroutine(BugStateCoroutine);
-        BugStateCoroutine = null;
-    }
-
-    IEnumerator Faint(float FaintTime)
-    {
-        yield return null;
-
-        int BaseSpeed = Speed;
-        Speed = 0;
-
-        yield return new WaitForSeconds(FaintTime);
-
-        Speed = BaseSpeed;
-
-        OffFaint();
-        yield break;    
     }
 
     private void OnDrawGizmos()
