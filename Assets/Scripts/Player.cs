@@ -43,6 +43,11 @@ public class Player : MonoBehaviour
     //PlayerMoveMethod
     Action PlayerMove;
 
+    [Header("PlayerAnimation"), SerializeField]
+    Animator PlayerAnimator = null;
+    [SerializeField]
+    List<RuntimeAnimatorController> Animators;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,6 +72,8 @@ public class Player : MonoBehaviour
 
         else if (this.PlayerNumber == PlayerNumber.Player2)
             PlayerMove = MovePlayer2;
+
+        PlayerAnimator = this.gameObject.GetComponent<Animator>();
     }
 
     //ChangethisPlayerType
@@ -99,19 +106,40 @@ public class Player : MonoBehaviour
 
         #region KeyPress
         if (Input.GetKey(KeyCode.W))
+        {
             Vertical = 1;
+            PlayerAnimator.SetBool("Walk", true);
+        }
         else if (Input.GetKey(KeyCode.S))
+        {
             Vertical = -1;
+            PlayerAnimator.SetBool("Walk", true);
+        }
         else if (Input.GetKey(KeyCode.D))
+        {
             Horizontal = 1;
+
+            this.GetComponent<SpriteRenderer>().flipX = false;
+            PlayerAnimator.SetBool("Walk", true);
+        }
         else if (Input.GetKey(KeyCode.A))
+        {
             Horizontal = -1;
+
+            this.GetComponent<SpriteRenderer>().flipX = true;
+            PlayerAnimator.SetBool("Walk", true);
+        }
+
+        else
+        {
+            PlayerAnimator.SetBool("Walk", false);
+        }
         #endregion
 
         MoveDir = new Vector2(Horizontal, Vertical);
 
         //Collision test with wall
-        RaycastHit2D hitinfo = Physics2D.Raycast(transform.position, MoveDir, 0.5f, wallMask);
+        RaycastHit2D hitinfo = Physics2D.Raycast(transform.position, MoveDir, 0.8f, wallMask);
         if (hitinfo)
         {
             Debug.Log($"Wall!");
@@ -119,6 +147,7 @@ public class Player : MonoBehaviour
 
         else
         {
+
             this.gameObject.transform.Translate(MoveDir * MoveSpeed * Time.deltaTime);
         }
     }
@@ -142,7 +171,7 @@ public class Player : MonoBehaviour
         MoveDir = new Vector2(Horizontal, Vertical);
 
         //Collision test with wall
-        RaycastHit2D hitinfo = Physics2D.Raycast(transform.position, MoveDir, 0.5f, wallMask);
+        RaycastHit2D hitinfo = Physics2D.Raycast(transform.position, MoveDir, 0.8f, wallMask);
         if (hitinfo)
         {
             Debug.Log($"Wall!"); 
@@ -196,6 +225,11 @@ public class Player : MonoBehaviour
         {
             HittingEnemy(Other.gameObject);
         }
+
+        else if(Other.CompareTag("Enemy") && this.PlayerType == PlayerType.Getter)
+        {
+
+        }    
 
         //Touch The Water
         if (Other.CompareTag("Water") && this.PlayerType == PlayerType.Getter)
