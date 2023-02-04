@@ -596,6 +596,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   PlayerNumber: 1
+  FaintTime: 5
+  IsFaint: 0
   PlayerType: 1
   movespeed: 0
   MoveDir: {x: 0, y: 0}
@@ -1857,6 +1859,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   PlayerNumber: 2
+  FaintTime: 5
+  IsFaint: 0
   PlayerType: 2
   movespeed: 0
   MoveDir: {x: 0, y: 0}
