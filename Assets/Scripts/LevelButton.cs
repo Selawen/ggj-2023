@@ -26,6 +26,10 @@ public class LevelButton : MonoBehaviour
     private void Awake()
     {
         manager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+
+        Color gradientStart = manager.rootColour.colorKeys[0].color;
+        Color gradientEnd = manager.rootColour.colorKeys[1].color;
+
         originalScale = transform.localScale;
      
         if (manager.completedLevels.Contains(levelIndex))
@@ -39,9 +43,9 @@ public class LevelButton : MonoBehaviour
         {
             if (completed)
             {
-                rootStartColour = manager.rootColour.colorKeys[0].color;
+                rootStartColour = gradientStart;
                 float t = 1.0f / (darkeningFraction + 1.0f);
-                rootEndColour = Color.Lerp(rootStartColour, manager.rootColour.colorKeys[1].color, t);
+                rootEndColour = Color.Lerp(rootStartColour, gradientEnd, t);
                 GetComponent<Image>().color = completedColour;
             }
 
@@ -55,13 +59,11 @@ public class LevelButton : MonoBehaviour
             float endT;
             endT = 1.0f / (darkeningFraction) * Mathf.Max(levelIndex, 1.0f);
 
-            rootStartColour = Color.Lerp(manager.rootColour.colorKeys[0].color, manager.rootColour.colorKeys[1].color, startT);
-            rootEndColour = Color.Lerp(manager.rootColour.colorKeys[0].color, manager.rootColour.colorKeys[1].color, endT);
+            rootStartColour = Color.Lerp(gradientStart, gradientEnd, startT);
+            rootEndColour = Color.Lerp(gradientStart, gradientEnd, endT);
         }
 
-        Debug.Log($"{manager.rootColour.colorKeys[0].color}, {manager.rootColour.colorKeys[1].color}");
-
-        Debug.Log($"level: {levelIndex}, startcolour: {rootStartColour}, endcolour: {rootEndColour}");
+        //Debug.Log($"level: {levelIndex}, startcolour: {rootStartColour}, endcolour: {rootEndColour}");
     }
 
     // Start is called before the first frame update
