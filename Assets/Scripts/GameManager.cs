@@ -10,12 +10,12 @@ public enum ObjectType
     None, Player, Enemy
 }
 
-public class GameManager : SingletonMono<GameManager>
+public class GameManager : MonoBehaviour
 {
     [SerializeField] private int level;
 
-    public int totalWaterInLevel;
-    public int PlayerWaterCount = -1;
+    public int totalWaterInLevel = -1;
+    public int PlayerWaterCount = 0;
     public int BugWaterCount = 0;
 
     public List<Player> PlayerList = new List<Player>();
@@ -30,12 +30,17 @@ public class GameManager : SingletonMono<GameManager>
     // Start is called before the first frame update
     void Start()
     {
+        finishPanel.SetActive(false);
         //Test
+        ResetSetting();
         BasicSetting();
     }
 
     private void FixedUpdate()
     {
+        if (PlayerList == null)
+            return; 
+
         if (PlayerList.Count != 0)
         {
             if (Vector2.Distance(PlayerList[0].transform.position, PlayerList[1].transform.position) / 1.8f >= MinimumSize
@@ -57,16 +62,18 @@ public class GameManager : SingletonMono<GameManager>
     // call when level is completed
     public void LevelComplete()
     {
+        PlayerList = null;
+
         if (PlayerWaterCount > BugWaterCount)
             GameObject.Find("LevelManager").GetComponent<LevelManager>().LevelComplete(level);
 
-        Time.timeScale = 0;
 
         if (finishPanel != null)
         {
             finishPanel.SetActive(true);
         }
 
+        Time.timeScale = 0;
         StartCoroutine(DelayCompletion());
     }
 
@@ -90,6 +97,7 @@ public class GameManager : SingletonMono<GameManager>
 
         PlayerWaterCount = 0;
         BugWaterCount = 0;
+        totalWaterInLevel = -1;
     }
     #endregion
     

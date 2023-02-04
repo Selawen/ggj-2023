@@ -12,14 +12,17 @@ public class Bug : MonoBehaviour
     [SerializeField]
     BugAI MyAI;
 
+    GameManager manager;
+
     private void Awake()
     {
+        manager = FindObjectOfType(typeof(GameManager)) as GameManager;
         MyAI = this.GetComponent<BugAI>();
     }
 
     public void GettingWater()
     {
-        GameManager.In.AddScore(ObjectType.Enemy);
+        manager.AddScore(ObjectType.Enemy);
     }
 
     private void OnTriggerEnter2D(Collider2D Other)

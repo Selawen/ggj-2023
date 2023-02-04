@@ -41,6 +41,8 @@ public class Player : Unit
     [SerializeField]
     List<RuntimeAnimatorController> Animators;
 
+    GameManager manager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +59,8 @@ public class Player : Unit
     #region PlayerInfoFunction
     public void BasicSetting()
     {
+        manager = FindObjectOfType(typeof(GameManager)) as GameManager;
+
         //Test
         MoveSpeed = 5.0f;
 
@@ -218,7 +222,7 @@ public class Player : Unit
 
     private void GettingWater(GameObject OtherWater)
     {
-        GameManager.In.AddScore(ObjectType.Player);
+        manager.AddScore(ObjectType.Player);
         Destroy(OtherWater);
     }
 
@@ -227,7 +231,7 @@ public class Player : Unit
         //Touch The ChangeButton
         if (Other.CompareTag("ChangeButton"))
         {
-            GameManager.In.ChangerType();
+            manager.ChangerType();
         }
 
         //Touch The Enemy
