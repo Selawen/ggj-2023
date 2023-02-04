@@ -175,7 +175,7 @@ public class Player : MonoBehaviour
     {
         //TODO:Make a Getting Water
 
-        GameManager.Ins.AddScore(ObjectType.Player);
+        GameManager.In.AddScore(ObjectType.Player);
         Destroy(OtherWater);
     }
 
@@ -184,7 +184,7 @@ public class Player : MonoBehaviour
         //Touch The ChangeButton
         if (Other.CompareTag("ChangeButton"))
         {
-            GameManager.Ins.ChangerType();
+            GameManager.In.ChangerType();
         }
 
         //Touch The Enemy

@@ -19,7 +19,7 @@ public class BugAI : MonoBehaviour
 
     IEnumerator TakeStep()
     {
-        yield return new WaitForSeconds(stepTime);
+        //yield return new WaitForSeconds(stepTime);
 
         List<int> wallDirections = new List<int>();
         List<int> openDirections = new List<int>();
@@ -37,7 +37,6 @@ public class BugAI : MonoBehaviour
 
             openDirections.Add(x);
         }
-
 
         // keep going straight half the time
         if (Random.Range(0, 2.0f) > 1 && !Physics2D.Raycast(transform.position, lastDirection, 1f, wallMask))
@@ -59,9 +58,32 @@ public class BugAI : MonoBehaviour
             }
         }
 
-        transform.Translate(new Vector3(lastDirection.x, lastDirection.y, 0));
+        //transform.Translate(new Vector3(lastDirection.x, lastDirection.y, 0));
+
+        //StartCoroutine(TakeStep());
+        StartCoroutine(MoveToGoal(lastDirection));
+
+        yield break;
+    }
+
+    IEnumerator MoveToGoal(Vector3 GoalPos)
+    {
+        yield return null;
+
+        while (true)
+        {
+            yield return null;
+            this.transform.position = Vector3.MoveTowards(this.gameObject.transform.position, GoalPos, stepTime * Time.deltaTime);
+
+            if(this.transform.position != GoalPos)
+            {
+                Debug.Log("Goal");
+                break;
+            }
+        }
 
         StartCoroutine(TakeStep());
+        yield break;
     }
 
     private void OnDrawGizmos()

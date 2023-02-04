@@ -15,16 +15,16 @@ public class UiManager : MonoBehaviour
 
     void ScoreTextControl()
     {
-        if (GameManager.Ins.PlayerWaterCount > GameManager.Ins.BugWaterCount)
-            ScoreText.text = $"<size={130}><color=aqua>{GameManager.Ins.PlayerWaterCount}</color></size>" +
-                $":<size={110}><color=red>{GameManager.Ins.BugWaterCount}</color></size>";
+        if (GameManager.In.PlayerWaterCount > GameManager.In.BugWaterCount)
+            ScoreText.text = $"<size={130}><color=aqua>{GameManager.In.PlayerWaterCount}</color></size>" +
+                $":<size={110}><color=red>{GameManager.In.BugWaterCount}</color></size>";
 
-        else if (GameManager.Ins.PlayerWaterCount < GameManager.Ins.BugWaterCount)
-            ScoreText.text = $"<size={110}><color=aqua>{GameManager.Ins.PlayerWaterCount}</color></size>" +
-                $":<size={130}><color=red>{GameManager.Ins.BugWaterCount}</color></size>";
+        else if (GameManager.In.PlayerWaterCount < GameManager.In.BugWaterCount)
+            ScoreText.text = $"<size={110}><color=aqua>{GameManager.In.PlayerWaterCount}</color></size>" +
+                $":<size={130}><color=red>{GameManager.In.BugWaterCount}</color></size>";
 
         else
-            ScoreText.text = $"<size={110}><color=aqua>{GameManager.Ins.PlayerWaterCount}</color></size>" +
-                $":<size={110}><color=red>{GameManager.Ins.BugWaterCount}</color></size>";
+            ScoreText.text = $"<size={110}><color=aqua>{GameManager.In.PlayerWaterCount}</color></size>" +
+                $":<size={110}><color=red>{GameManager.In.BugWaterCount}</color></size>";
     }
 }
