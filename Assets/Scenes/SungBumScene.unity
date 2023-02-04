@@ -1297,7 +1297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb75d4fbbd147e49bd19796ca731fdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FaintTime: 2
+  FaintTime: 5
   IsFaint: 0
   MyAI: {fileID: 0}
 --- !u!50 &1419730095

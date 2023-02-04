@@ -11,6 +11,8 @@ public class BugAI : MonoBehaviour
     private Vector2 lastDirection = Vector2.up;
 
     [SerializeField] private LayerMask wallMask;
+
+    Coroutine BugStateCoroutine;
      
     private void Start()
     {
@@ -90,7 +92,19 @@ public class BugAI : MonoBehaviour
         yield break;
     }
 
-    public IEnumerator Faint(float FaintTime)
+    public void OnFaint(float FaintTime)
+    {
+        if(BugStateCoroutine == null)
+            BugStateCoroutine = StartCoroutine(Faint(FaintTime));
+    }
+
+    void OffFaint()
+    {
+        StopCoroutine(BugStateCoroutine);
+        BugStateCoroutine = null;
+    }
+
+    IEnumerator Faint(float FaintTime)
     {
         yield return null;
 
@@ -100,7 +114,9 @@ public class BugAI : MonoBehaviour
         yield return new WaitForSeconds(FaintTime);
 
         Speed = BaseSpeed;
-        yield break;
+
+        OffFaint();
+        yield break;    
     }
 
     private void OnDrawGizmos()
