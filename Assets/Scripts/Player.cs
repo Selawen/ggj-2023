@@ -19,6 +19,10 @@ public class Player : MonoBehaviour
 
     [Header("Player Infos"), SerializeField]
     PlayerNumber PlayerNumber = PlayerNumber.None;
+    [SerializeField]
+    float FaintTime = 5.0f;
+    [SerializeField]
+    bool IsFaint = false;
 
     //Select PlayerTypes
     [SerializeField]
@@ -168,14 +172,14 @@ public class Player : MonoBehaviour
     #region PlayerInterationFunction
     private void HittingEnemy(GameObject OtherEnemy)
     {
-        //TODO:Make a HittingEnemy
+        OtherEnemy.GetComponent<BugAI>().OnFaint(4.0f);
     }
 
     private void GettingWater(GameObject OtherWater)
     {
         //TODO:Make a Getting Water
 
-        GameManager.Ins.AddScore(ObjectType.Player);
+        GameManager.In.AddScore(ObjectType.Player);
         Destroy(OtherWater);
     }
 
@@ -184,7 +188,7 @@ public class Player : MonoBehaviour
         //Touch The ChangeButton
         if (Other.CompareTag("ChangeButton"))
         {
-            GameManager.Ins.ChangerType();
+            GameManager.In.ChangerType();
         }
 
         //Touch The Enemy

@@ -10,7 +10,7 @@ public enum ObjectType
     None, Player, Enemy
 }
 
-public class GameManager : MonoBehaviour
+public class GameManager : SingletonMono<GameManager>
 {
     [SerializeField] private int level;
 
@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
     public int BugWaterCount = 0;
 
     public List<Player> PlayerList = new List<Player>();
-    public static GameManager Ins;
 
     public float MaximumSize;
     public float MinimumSize;
@@ -27,27 +26,25 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         //Test
-        Ins = this;
-
-        //Test
         BasicSetting();
     }
 
     private void FixedUpdate()
     {
-        //Debug.Log(Vector2.Distance(PlayerList[0].transform.position, PlayerList[1].transform.position));
-
-        if (Vector2.Distance(PlayerList[0].transform.position, PlayerList[1].transform.position) / 1.8f >= MinimumSize 
-            && Vector2.Distance(PlayerList[0].transform.position, PlayerList[1].transform.position) / 1.8f <= MaximumSize)
+        if (PlayerList.Count != 0)
         {
-            Camera.main.orthographicSize = Vector2.Distance(PlayerList[0].transform.position, PlayerList[1].transform.position) / 1.8f;
+            Debug.Log("Test");
 
-            
+            if (Vector2.Distance(PlayerList[0].transform.position, PlayerList[1].transform.position) / 1.8f >= MinimumSize
+                && Vector2.Distance(PlayerList[0].transform.position, PlayerList[1].transform.position) / 1.8f <= MaximumSize)
+            {
+                Camera.main.orthographicSize = Vector2.Distance(PlayerList[0].transform.position, PlayerList[1].transform.position) / 1.8f;
+            }
+
+            Debug.Log((PlayerList[1].transform.position - PlayerList[0].transform.position) / 2);
+            Camera.main.transform.position = PlayerList[0].transform.position +
+                ((PlayerList[1].transform.position - PlayerList[0].transform.position) / 2) + new Vector3(0, 0, -10);
         }
-
-        Debug.Log((PlayerList[1].transform.position - PlayerList[0].transform.position) / 2);
-        Camera.main.transform.position = PlayerList[0].transform.position +
-            ((PlayerList[1].transform.position - PlayerList[0].transform.position) / 2) + new Vector3(0, 0, -10);
     }
 
     // call when level is completed

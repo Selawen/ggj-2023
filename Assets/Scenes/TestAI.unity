@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d616d3cf48303d42814e5434cfefa28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stepTime: 1
+  stepTime: 5
   wallMask:
     serializedVersion: 2
     m_Bits: 64
@@ -853,7 +853,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
-  testLevelComplete: 0
   PlayerWaterCount: 0
   BugWaterCount: 0
   PlayerList: []
