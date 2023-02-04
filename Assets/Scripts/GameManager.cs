@@ -63,6 +63,9 @@ public class GameManager : SingletonMono<GameManager>
     public void ResetSetting()
     {
         PlayerList = null;
+
+        PlayerWaterCount = 0;
+        BugWaterCount = 0;
     }
     #endregion
     
