@@ -23,6 +23,10 @@ public class GameManager : SingletonMono<GameManager>
     public float MaximumSize;
     public float MinimumSize;
 
+    public GameObject finishPanel;
+
+    public float waitBeforeReturningToMain = 3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,8 +60,14 @@ public class GameManager : SingletonMono<GameManager>
         if (PlayerWaterCount > BugWaterCount)
             GameObject.Find("LevelManager").GetComponent<LevelManager>().LevelComplete(level);
 
-        //maybe move this later
-        SceneManager.LoadScene(0); // load main menu scene
+        Time.timeScale = 0;
+
+        if (finishPanel != null)
+        {
+            finishPanel.SetActive(true);
+        }
+
+        StartCoroutine(DelayCompletion());
     }
 
     //SettingFunctionGroup
@@ -104,4 +114,13 @@ public class GameManager : SingletonMono<GameManager>
         totalWaterInLevel--;
     }
     #endregion
+
+    private IEnumerator DelayCompletion()
+    {
+        yield return new WaitForSecondsRealtime(waitBeforeReturningToMain);
+
+        Time.timeScale = 1;
+
+        SceneManager.LoadScene(0); // load main menu scene
+    }
 }
