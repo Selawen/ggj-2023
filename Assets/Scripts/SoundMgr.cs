@@ -27,6 +27,8 @@ public class SoundMgr : SingletonMono<SoundMgr>
     public AudioClip[] BGMClip; // ����� �ҽ��� ����.
     public AudioClip[] SFXClip; // ����� �ҽ��� ����.
 
+    public bool playbgMusicOnAwake = true;
+
     Dictionary<string, AudioClip> SFXaudioClipsDic;
     Dictionary<string, AudioClip> BGMaudioClipsDic;
     AudioSource sfxPlayer;
@@ -65,7 +67,7 @@ public class SoundMgr : SingletonMono<SoundMgr>
 
     private void Start()
     {
-        if (bgmPlayer != null)
+        if (bgmPlayer != null && playbgMusicOnAwake)
             bgmPlayer.Play();
     }
 
