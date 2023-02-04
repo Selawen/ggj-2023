@@ -68,8 +68,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -99,11 +99,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.8773585, g: 0.45242074, b: 0.094357364, a: 1}
-    m_HighlightedColor: {r: 0.6792453, g: 0.39344165, b: 0.21402632, a: 1}
+    m_NormalColor: {r: 0.41509432, g: 0.21429814, b: 0.064613745, a: 1}
+    m_HighlightedColor: {r: 0.745283, g: 0.40320718, b: 0.20038268, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.5, g: 0.25693148, b: 0.12452829, a: 0.5019608}
+    m_DisabledColor: {r: 0.4056604, g: 0.2948907, b: 0.24684052, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -147,14 +147,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelIndex: 1
+  rootDepth: 0
   levelsToActivate: []
   completed: 0
   activationDelay: 2.27
   activatedScale: 1
   unActivatedScale: 0.8
-  completedColour: {r: 0, g: 1, b: 0, a: 1}
+  completedColour: {r: 0.6036846, g: 0.9622642, b: 0.6036846, a: 1}
   rootPrefab: {fileID: 3252540984512922650, guid: 94733a9a926085141ae7b57eac9bd54b, type: 3}
-  rootWidth: 0
 --- !u!1 &7604778410048027841
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,7 +190,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -100, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7604778410048027846
 CanvasRenderer:
@@ -247,13 +247,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 537.05
+  m_fontSize: 447.55
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 0
   m_fontSizeMax: 1000
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535

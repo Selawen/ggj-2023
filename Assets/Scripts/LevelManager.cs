@@ -12,15 +12,15 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
-        if (amountOfLevels == 0)
-        {
-            amountOfLevels = FindObjectsOfType(typeof(LevelButton)).Length;
-        }
-
         if (FindObjectsOfType(typeof(LevelManager)).Length < 2)
             DontDestroyOnLoad(gameObject);
         else
             Destroy(gameObject);
+
+        if (amountOfLevels == 0)
+        {
+            amountOfLevels = FindObjectsOfType(typeof(LevelButton)).Length;
+        }
     }
 
     public void LevelComplete(int completedLevel)

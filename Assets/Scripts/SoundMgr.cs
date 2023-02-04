@@ -156,8 +156,8 @@ public class SoundMgr : SingletonMono<SoundMgr>
 
     public void SetVolumes() // SFX, BGM 둘다 적용
     {
-        masterVolumeSFX = OtherPanel.transform.GetChild(0).transform.GetChild(1).gameObject.GetComponent<Slider>().value;
-        masterVolumeBGM = OtherPanel.transform.GetChild(0).transform.GetChild(1).gameObject.GetComponent<Slider>().value;
+        masterVolumeSFX = OtherPanel.GetComponentInChildren<Slider>().value;
+        masterVolumeBGM = OtherPanel.GetComponentInChildren<Slider>().value;
 
         bgmPlayer.volume = masterVolumeBGM;
     }

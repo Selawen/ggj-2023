@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class LevelButton : MonoBehaviour
 {
     [SerializeField] private int levelIndex;
+    [SerializeField] private int rootDepth;
     [SerializeField] private LevelButton[] levelsToActivate;
     [SerializeField] private bool completed = false;
 
@@ -16,7 +17,9 @@ public class LevelButton : MonoBehaviour
     [SerializeField] private float activatedScale = 1f, unActivatedScale = 0.8f;
     [SerializeField] private Color completedColour = Color.green;
     [SerializeField] private GameObject rootPrefab;
-    [SerializeField] private float rootWidth;
+    
+    
+    private float rootWidth;
 
     private LevelManager manager;
     private Color rootStartColour, rootEndColour;
@@ -25,6 +28,8 @@ public class LevelButton : MonoBehaviour
 
     private void Awake()
     {
+        rootWidth = 1.0f / rootDepth;
+
         manager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
 
         Color gradientStart = manager.rootColour.colorKeys[0].color;
@@ -55,15 +60,14 @@ public class LevelButton : MonoBehaviour
         {
             float startT;
             startT = 1.0f/ (darkeningFraction + 1.0f);
-            startT *= Mathf.Max(levelIndex, 1.0f);
+            startT *= Mathf.Max(rootDepth, 1.0f);
             float endT;
-            endT = 1.0f / (darkeningFraction) * Mathf.Max(levelIndex, 1.0f);
+            endT = 1.0f / (darkeningFraction) * Mathf.Max(rootDepth, 1.0f);
 
             rootStartColour = Color.Lerp(gradientStart, gradientEnd, startT);
             rootEndColour = Color.Lerp(gradientStart, gradientEnd, endT);
         }
 
-        //Debug.Log($"level: {levelIndex}, startcolour: {rootStartColour}, endcolour: {rootEndColour}");
     }
 
     // Start is called before the first frame update
