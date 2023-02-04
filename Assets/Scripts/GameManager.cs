@@ -14,10 +14,13 @@ public class GameManager : SingletonMono<GameManager>
 {
     [SerializeField] private int level;
 
+    public bool IsGameStart = false;
+
     public int PlayerWaterCount = 0;
     public int BugWaterCount = 0;
 
     public List<Player> PlayerList = new List<Player>();
+    public List<GameObject> WaterList = new List<GameObject>();
 
     public float MaximumSize;
     public float MinimumSize;
@@ -57,7 +60,10 @@ public class GameManager : SingletonMono<GameManager>
     #region SettingFunction
     public void BasicSetting()
     {
+        IsGameStart = true;
+
         PlayerList = FindObjectsOfType<Player>().ToList();
+        WaterList = GameObject.FindGameObjectsWithTag("Water").ToList();
     }
 
     public void ResetSetting()
@@ -86,6 +92,19 @@ public class GameManager : SingletonMono<GameManager>
 
         else
             BugWaterCount++;
+    }
+
+    public void GettingWater(GameObject Water)
+    {
+        WaterList.Remove(Water);
+        Destroy(Water);
+
+        if(WaterList.Count <= 0)
+        {
+            Debug.Log($"{(PlayerWaterCount > BugWaterCount ? "Player Win!!" : "Bug Win...")} ");
+
+            //TODO:ShowGameResult & ComeBackRoot
+        }
     }
     #endregion
 }

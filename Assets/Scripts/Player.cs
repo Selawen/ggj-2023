@@ -218,10 +218,8 @@ public class Player : Unit
 
     private void GettingWater(GameObject OtherWater)
     {
-        //TODO:Make a Getting Water
-
         GameManager.In.AddScore(ObjectType.Player);
-        Destroy(OtherWater);
+        GameManager.In.GettingWater(OtherWater);
     }
 
     private void OnTriggerEnter2D(Collider2D Other)
