@@ -75,17 +75,11 @@ public class Player : Unit
         if (this.PlayerType == PlayerType.Getter)
         {
             PlayerType = PlayerType.Hunter;
-
-            //Test
-            this.GetComponent<SpriteRenderer>().color = Color.yellow;
         }
 
         else
         {
             PlayerType = PlayerType.Getter;
-
-            //Test
-            this.GetComponent<SpriteRenderer>().color = Color.green;
         }
     }
     #endregion
