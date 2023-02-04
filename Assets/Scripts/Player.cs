@@ -137,7 +137,7 @@ public class Player : Unit
         RaycastHit2D hitinfo = Physics2D.Raycast(transform.position, MoveDir, 0.8f, wallMask);
         if (hitinfo)
         {
-            Debug.Log($"Wall!");
+            //Debug.Log($"Wall!");
         }
 
         else
