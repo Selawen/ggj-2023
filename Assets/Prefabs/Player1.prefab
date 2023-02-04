@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a34b86ee1108a41b7072c1bfd385d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 0
+  movespeed: 1
   wallMask:
     serializedVersion: 2
     m_Bits: 64
@@ -142,7 +142,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.100602925, y: -0.03041482}
