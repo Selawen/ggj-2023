@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 441b030c9bf219b43afb683b5f4bfa0b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7120294782179526910
+    second: PlayerCanWak_0
+  - first:
+      213: 1514534609181078434
+    second: PlayerCanWak_1
+  - first:
+      213: -7762007063498763630
+    second: PlayerCanWak_2
+  - first:
+      213: 7667546118257932671
+    second: PlayerCanWak_3
+  - first:
+      213: 8781738125873314740
+    second: PlayerCanWak_4
+  - first:
+      213: -7326722062253987280
+    second: PlayerCanWak_5
+  - first:
+      213: 7394664840721705642
+    second: PlayerCanWak_6
+  - first:
+      213: -7765161700730248656
+    second: PlayerCanWak_7
+  - first:
+      213: -4751977932472112040
+    second: PlayerCanWak_8
+  - first:
+      213: -6192637889505064716
+    second: PlayerCanWak_9
+  - first:
+      213: -6602346659609781904
+    second: PlayerCanWak_10
+  - first:
+      213: -8783226502747183435
+    second: PlayerCanWak_11
+  - first:
+      213: 6244422219209955633
+    second: PlayerCanWak_12
+  - first:
+      213: 7322979387446754634
+    second: PlayerCanWak_13
+  - first:
+      213: 5096391606965866213
+    second: PlayerCanWak_14
+  - first:
+      213: 5632000746562648686
+    second: PlayerCanWak_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerCanWak_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 969
+        width: 189
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2073f1cde91af2d90800000000000000
+      internalID: -7120294782179526910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_1
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 968
+        width: 194
+        height: 287
+      alignment: 9
+      pivot: {x: 0.37957555, y: 0.28608763}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3f544e335b40510800000000000000
+      internalID: 1514534609181078434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_2
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 967
+        width: 200
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292551c53bfc74490800000000000000
+      internalID: -7762007063498763630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_3
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 968
+        width: 198
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7970b5f198986a60800000000000000
+      internalID: 7667546118257932671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 627
+        width: 230
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 12, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbfe2f3c400fd970800000000000000
+      internalID: 8781738125873314740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 627
+        width: 187
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a655f5a11425a90800000000000000
+      internalID: -7326722062253987280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_6
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 627
+        width: 194
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaaa9487e702f9660800000000000000
+      internalID: 7394664840721705642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_7
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 622
+        width: 204
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0326184239a9c3490800000000000000
+      internalID: -7765161700730248656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_8
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 299
+        width: 212
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c218a5f359d0eb0800000000000000
+      internalID: -4751977932472112040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_9
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 307
+        width: 216
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f80d6546a45f0aa0800000000000000
+      internalID: -6192637889505064716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_10
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 311
+        width: 231
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079d8fd91b0cf54a0800000000000000
+      internalID: -6602346659609781904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_11
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 312
+        width: 230
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b625f10806bb1680800000000000000
+      internalID: -8783226502747183435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 8
+        width: 219
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139d09b8ce4a8a650800000000000000
+      internalID: 6244422219209955633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_13
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 6
+        width: 225
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d754e34f270a560800000000000000
+      internalID: 7322979387446754634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_14
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 2
+        width: 202
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee8b792a250ab640800000000000000
+      internalID: 5096391606965866213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCanWak_15
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 3
+        width: 196
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6af991e6d2e82e40800000000000000
+      internalID: 5632000746562648686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
