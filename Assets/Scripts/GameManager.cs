@@ -4,6 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+public enum ObjectType
+{
+    None, Player, Enemy
+}
+
 public class GameManager : MonoBehaviour
 {
     public int PlayerWaterCount = 0;
@@ -43,6 +48,15 @@ public class GameManager : MonoBehaviour
         {
             Player.ChangePlayerType();
         }
+    }
+
+    public void AddScore(ObjectType Type)
+    {
+        if(Type == ObjectType.Player)
+            PlayerWaterCount++;
+
+        else
+            BugWaterCount++;
     }
     #endregion
 }

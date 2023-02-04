@@ -135,6 +135,8 @@ public class Player : MonoBehaviour
     private void GettingWater(GameObject OtherWater)
     {
         //TODO:Make a Getting Water
+
+        GameManager.Ins.AddScore(ObjectType.Player);
         Destroy(OtherWater);
     }
 
