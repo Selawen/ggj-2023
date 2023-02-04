@@ -75,11 +75,15 @@ public class Player : Unit
         if (this.PlayerType == PlayerType.Getter)
         {
             PlayerType = PlayerType.Hunter;
+
+            PlayerAnimator.runtimeAnimatorController = Animators[1];
         }
 
         else
         {
             PlayerType = PlayerType.Getter;
+
+            PlayerAnimator.runtimeAnimatorController = Animators[0];
         }
     }
     #endregion

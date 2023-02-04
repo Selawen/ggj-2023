@@ -108,7 +108,9 @@ MonoBehaviour:
   PlayerType: 2
   MoveDir: {x: 0, y: 0}
   PlayerAnimator: {fileID: 0}
-  Animators: []
+  Animators:
+  - {fileID: 9100000, guid: 56450750ebd6e814fb18bbf7eca341e1, type: 2}
+  - {fileID: 9100000, guid: bbd2010a27d38544ea4b370e5c6d57d1, type: 2}
 --- !u!61 &2645508827862708418
 BoxCollider2D:
   m_ObjectHideFlags: 0
