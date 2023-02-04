@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2330305828380053974}
+  - component: {fileID: 2300684359026024520}
   - component: {fileID: 2330305828380053969}
   - component: {fileID: 2330305828380053968}
   - component: {fileID: 2330305828380053971}
@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2330305828380053970}
   - component: {fileID: 7760213681613306721}
   - component: {fileID: 1672149363}
+  - component: {fileID: 1285717514100131089}
   m_Layer: 0
   m_Name: bug
   m_TagString: Enemy
@@ -23,8 +24,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2330305828380053974
-Transform:
+--- !u!224 &2300684359026024520
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -32,11 +33,16 @@ Transform:
   m_GameObject: {fileID: 2330305828380053965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1.6733333, y: 1.52}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &2330305828380053969
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -103,7 +109,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.8
 --- !u!50 &2330305828380053971
 Rigidbody2D:
   serializedVersion: 4
@@ -197,3 +203,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!222 &1285717514100131089
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330305828380053965}
+  m_CullTransparentMesh: 1

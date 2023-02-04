@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &36333181 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6443023969218510178, guid: a742e50cae25d7c40b09229e33707597, type: 3}
+  m_PrefabInstance: {fileID: 1090186461}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &82920334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -209,7 +220,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 907b704362dc77543a86faaf826511e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   ScoreText: {fileID: 1090186462}
+  levelCompleteText: {fileID: 36333181}
 --- !u!4 &131570316
 Transform:
   m_ObjectHideFlags: 0
@@ -35018,7 +35031,7 @@ MonoBehaviour:
   PlayerList: []
   MaximumSize: 10
   MinimumSize: 5
-  finishPanel: {fileID: 0}
+  finishPanel: {fileID: 1129189010}
   waitBeforeReturningToMain: 3
 --- !u!4 &320391547
 Transform:
@@ -49657,6 +49670,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1129189010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1067538984343581541, guid: a742e50cae25d7c40b09229e33707597, type: 3}
+  m_PrefabInstance: {fileID: 1090186461}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1138304764
 GameObject:
   m_ObjectHideFlags: 0
