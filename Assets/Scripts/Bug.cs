@@ -30,7 +30,7 @@ public class Bug : MonoBehaviour
             GettingWater();
             MyAI.OnFaint(FaintTime);
 
-            GameManager.In.GettingWater(Other.gameObject);
+            Destroy(Other.gameObject);
         }
     }
 }
