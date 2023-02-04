@@ -542,7 +542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b23f785f62ecfe34f9068abc4e0fe69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  completedLevels: 01000000
+  completedLevels: 
   amountOfLevels: 0
   rootColour:
     serializedVersion: 2
