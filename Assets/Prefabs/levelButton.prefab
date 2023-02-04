@@ -29,7 +29,7 @@ RectTransform:
   m_GameObject: {fileID: 7604778409982888689}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 7604778410048027840}
   m_Father: {fileID: 0}
@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 45, y: 45}
+  m_SizeDelta: {x: 600, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7604778409982888692
 CanvasRenderer:
@@ -99,7 +99,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.8773585, g: 0.45242074, b: 0.094357364, a: 1}
     m_HighlightedColor: {r: 0.6792453, g: 0.39344165, b: 0.21402632, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -149,10 +149,12 @@ MonoBehaviour:
   levelIndex: 1
   levelsToActivate: []
   completed: 0
-  activationDelay: 0.5
+  activationDelay: 2.27
   activatedScale: 1
   unActivatedScale: 0.8
   completedColour: {r: 0, g: 1, b: 0, a: 1}
+  rootPrefab: {fileID: 3252540984512922650, guid: 94733a9a926085141ae7b57eac9bd54b, type: 3}
+  rootWidth: 0
 --- !u!1 &7604778410048027841
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,12 +247,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 537.05
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 0
+  m_fontSizeMax: 1000
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
