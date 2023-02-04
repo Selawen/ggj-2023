@@ -76,16 +76,14 @@ public class Player : Unit
         {
             PlayerType = PlayerType.Hunter;
 
-            //Test
-            this.GetComponent<SpriteRenderer>().color = Color.yellow;
+            PlayerAnimator.runtimeAnimatorController = Animators[1];
         }
 
         else
         {
             PlayerType = PlayerType.Getter;
 
-            //Test
-            this.GetComponent<SpriteRenderer>().color = Color.green;
+            PlayerAnimator.runtimeAnimatorController = Animators[0];
         }
     }
     #endregion
@@ -152,13 +150,34 @@ public class Player : Unit
 
         #region KeyPress
         if (Input.GetKey(KeyCode.UpArrow))
+        {
             Vertical = 1;
+            PlayerAnimator.SetBool("Walk", true);
+        }
         else if (Input.GetKey(KeyCode.DownArrow))
+        {
             Vertical = -1;
+            PlayerAnimator.SetBool("Walk", true);
+        }
         else if (Input.GetKey(KeyCode.RightArrow))
+        {
             Horizontal = 1;
+
+            this.GetComponent<SpriteRenderer>().flipX = false;
+            PlayerAnimator.SetBool("Walk", true);
+        }
         else if (Input.GetKey(KeyCode.LeftArrow))
+        {
             Horizontal = -1;
+
+            this.GetComponent<SpriteRenderer>().flipX = true;
+            PlayerAnimator.SetBool("Walk", true);
+        }
+
+        else
+        {
+            PlayerAnimator.SetBool("Walk", false);
+        }
         #endregion
 
         MoveDir = new Vector2(Horizontal, Vertical);
@@ -199,8 +218,6 @@ public class Player : Unit
 
     private void GettingWater(GameObject OtherWater)
     {
-        //TODO:Make a Getting Water
-
         GameManager.In.AddScore(ObjectType.Player);
         Destroy(OtherWater);
     }
@@ -217,6 +234,7 @@ public class Player : Unit
         if (Other.CompareTag("Enemy") && this.PlayerType == PlayerType.Hunter)
         {
             HittingEnemy(Other.gameObject);
+            StartCoroutine(ChangeAttackAnim());
         }
 
         else if(Other.CompareTag("Enemy") && this.PlayerType == PlayerType.Getter)
@@ -229,6 +247,20 @@ public class Player : Unit
         {
             GettingWater(Other.gameObject);
         }
+    }
+
+    IEnumerator ChangeAttackAnim()
+    {
+        PlayerAnimator.SetBool("Attack", true);
+        float BaseSpeed = MoveSpeed;
+        MoveSpeed = 0;
+
+        yield return new WaitForSeconds(1.0f);
+
+        MoveSpeed = BaseSpeed;
+
+        PlayerAnimator.SetBool("Attack", false);
+        yield break;
     }
     #endregion
 }
