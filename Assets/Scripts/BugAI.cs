@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BugAI : MonoBehaviour
 {
-    [SerializeField] private int stepTime = 1;
+    [SerializeField] private int Speed = 1;
 
     private static Vector2[] directions = { Vector2.up, Vector2.down, Vector2.right, Vector2.left };
 
@@ -26,11 +26,11 @@ public class BugAI : MonoBehaviour
 
         for (int x = 0; x < 4; x++)
         {
-            Debug.Log($"trying {x}");
+            //Debug.Log($"trying {x}");
             RaycastHit2D hitinfo = Physics2D.Raycast(transform.position, directions[x], 1f, wallMask);
             if (hitinfo)
             {
-                Debug.Log($"wall at direction {x}, {hitinfo.collider.name}");
+                //Debug.Log($"wall at direction {x}, {hitinfo.collider.name}");
                 wallDirections.Add(x);
                 continue;
             }
@@ -61,6 +61,8 @@ public class BugAI : MonoBehaviour
         //transform.Translate(new Vector3(lastDirection.x, lastDirection.y, 0));
 
         //StartCoroutine(TakeStep());
+
+        Debug.Log(lastDirection);
         StartCoroutine(MoveToGoal(lastDirection));
 
         yield break;
@@ -70,12 +72,14 @@ public class BugAI : MonoBehaviour
     {
         yield return null;
 
+        GoalPos += this.transform.position;
+
         while (true)
         {
             yield return null;
-            this.transform.position = Vector3.MoveTowards(this.gameObject.transform.position, GoalPos, stepTime * Time.deltaTime);
+            this.transform.position = Vector3.MoveTowards(this.gameObject.transform.position, GoalPos, Speed * Time.deltaTime);
 
-            if(this.transform.position != GoalPos)
+            if(this.transform.position == GoalPos)
             {
                 Debug.Log("Goal");
                 break;
