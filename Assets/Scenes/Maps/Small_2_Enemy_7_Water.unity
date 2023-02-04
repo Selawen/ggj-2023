@@ -86400,13 +86400,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 2
-  IsGameStart: 0
+  totalWaterInLevel: 0
   PlayerWaterCount: 0
   BugWaterCount: 0
   PlayerList: []
-  WaterList: []
   MaximumSize: 10
   MinimumSize: 5
+  finishPanel: {fileID: 0}
+  waitBeforeReturningToMain: 3
 --- !u!4 &2030188055
 Transform:
   m_ObjectHideFlags: 0
