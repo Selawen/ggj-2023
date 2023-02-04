@@ -69,7 +69,6 @@ public class BugAI : Unit
     {
         yield return null;
 
-        GoalPos *= 0.5f;
         GoalPos += this.transform.position;
 
         while (true)
