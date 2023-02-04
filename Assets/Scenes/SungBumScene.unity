@@ -1885,6 +1885,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1507409751, guid: a742e50cae25d7c40b09229e33707597, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 9ac53b1f2f6d51943b11a8a1dcdea4af, type: 3}
+    - target: {fileID: 1507409751, guid: a742e50cae25d7c40b09229e33707597, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507409751, guid: a742e50cae25d7c40b09229e33707597, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7069609368359906593, guid: a742e50cae25d7c40b09229e33707597, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -1975,6 +1987,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7069609368359906597, guid: a742e50cae25d7c40b09229e33707597, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069609368834404702, guid: a742e50cae25d7c40b09229e33707597, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -173
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069609368834404703, guid: a742e50cae25d7c40b09229e33707597, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 9ac53b1f2f6d51943b11a8a1dcdea4af, type: 3}
+    - target: {fileID: 7069609368834404703, guid: a742e50cae25d7c40b09229e33707597, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069609368834404703, guid: a742e50cae25d7c40b09229e33707597, type: 3}
+      propertyPath: m_FontData.m_FontStyle
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
