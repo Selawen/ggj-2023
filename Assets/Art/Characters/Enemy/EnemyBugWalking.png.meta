@@ -94,7 +94,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -135,6 +135,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -142,10 +166,10 @@ TextureImporter:
       name: EnemyBugWalking_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 256
-        height: 256
+        x: 3
+        y: 776
+        width: 251
+        height: 228
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +187,10 @@ TextureImporter:
       name: EnemyBugWalking_1
       rect:
         serializedVersion: 2
-        x: 255
-        y: 768
-        width: 256
-        height: 256
+        x: 256
+        y: 776
+        width: 249
+        height: 227
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +208,10 @@ TextureImporter:
       name: EnemyBugWalking_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 768
-        width: 256
-        height: 256
+        x: 513
+        y: 777
+        width: 245
+        height: 223
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +229,10 @@ TextureImporter:
       name: EnemyBugWalking_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 768
-        width: 256
-        height: 256
+        x: 772
+        y: 778
+        width: 241
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +250,10 @@ TextureImporter:
       name: EnemyBugWalking_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 256
+        x: 11
+        y: 528
+        width: 239
+        height: 217
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +271,10 @@ TextureImporter:
       name: EnemyBugWalking_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 256
+        x: 258
+        y: 529
+        width: 242
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +292,10 @@ TextureImporter:
       name: EnemyBugWalking_6
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 256
+        x: 513
+        y: 520
+        width: 248
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +313,10 @@ TextureImporter:
       name: EnemyBugWalking_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 512
-        width: 256
-        height: 256
+        x: 771
+        y: 513
+        width: 251
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +334,10 @@ TextureImporter:
       name: EnemyBugWalking_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 256
-        height: 256
+        x: 3
+        y: 258
+        width: 250
+        height: 239
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +355,10 @@ TextureImporter:
       name: EnemyBugWalking_9
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
+        x: 260
+        y: 264
+        width: 250
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +376,10 @@ TextureImporter:
       name: EnemyBugWalking_10
       rect:
         serializedVersion: 2
-        x: 515
-        y: 256
-        width: 256
-        height: 256
+        x: 519
+        y: 261
+        width: 250
+        height: 235
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +397,10 @@ TextureImporter:
       name: EnemyBugWalking_11
       rect:
         serializedVersion: 2
-        x: 768
-        y: 256
-        width: 256
-        height: 256
+        x: 772
+        y: 263
+        width: 251
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,10 +418,10 @@ TextureImporter:
       name: EnemyBugWalking_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
+        x: 3
+        y: 12
+        width: 251
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +439,10 @@ TextureImporter:
       name: EnemyBugWalking_13
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
+        x: 260
+        y: 8
+        width: 251
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,10 +460,10 @@ TextureImporter:
       name: EnemyBugWalking_14
       rect:
         serializedVersion: 2
-        x: 515
-        y: 0
-        width: 256
-        height: 256
+        x: 519
+        y: 5
+        width: 251
+        height: 227
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,10 +481,10 @@ TextureImporter:
       name: EnemyBugWalking_15
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 256
+        x: 772
+        y: 12
+        width: 251
+        height: 228
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

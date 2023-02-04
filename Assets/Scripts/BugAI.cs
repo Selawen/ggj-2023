@@ -69,6 +69,11 @@ public class BugAI : Unit
     {
         yield return null;
 
+        if (GoalPos.x < 0)
+            this.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        else if (GoalPos.x > 0)
+            this.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+
         GoalPos += this.transform.position;
 
         while (true)

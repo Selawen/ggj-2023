@@ -286,10 +286,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: bug
       objectReference: {fileID: 0}
-    - target: {fileID: 2330305828380053970, guid: fb906785a0243be43809009f0c5dbad2, type: 3}
-      propertyPath: movespeed
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2330305828380053974, guid: fb906785a0243be43809009f0c5dbad2, type: 3}
       propertyPath: m_RootOrder
       value: 5
