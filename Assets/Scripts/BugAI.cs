@@ -90,6 +90,19 @@ public class BugAI : MonoBehaviour
         yield break;
     }
 
+    public IEnumerator Faint(float FaintTime)
+    {
+        yield return null;
+
+        int BaseSpeed = Speed;
+        Speed = 0;
+
+        yield return new WaitForSeconds(FaintTime);
+
+        Speed = BaseSpeed;
+        yield break;
+    }
+
     private void OnDrawGizmos()
     {
         if (Physics2D.Raycast(transform.position, lastDirection, 1f, wallMask))

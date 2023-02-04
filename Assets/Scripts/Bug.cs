@@ -4,6 +4,19 @@ using UnityEngine;
 
 public class Bug : MonoBehaviour
 {
+    [SerializeField]
+    float FaintTime = 3.0f;
+    [SerializeField]
+    bool IsFaint = false;
+
+    [SerializeField]
+    BugAI MyAI;
+
+    private void Awake()
+    {
+        MyAI = this.GetComponent<BugAI>();
+    }
+
     public void GettingWater()
     {
         GameManager.In.AddScore(ObjectType.Enemy);
@@ -15,6 +28,8 @@ public class Bug : MonoBehaviour
         if (Other.CompareTag("Water"))
         {
             GettingWater();
+            StartCoroutine(MyAI.Faint(FaintTime));
+
             Destroy(Other.gameObject);
         }
     }
