@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bug : MonoBehaviour
 {
     [SerializeField]
-    float FaintTime = 3.0f;
+    float FaintTime = 5.0f;
     [SerializeField]
     bool IsFaint = false;
 
@@ -28,7 +28,7 @@ public class Bug : MonoBehaviour
         if (Other.CompareTag("Water"))
         {
             GettingWater();
-            StartCoroutine(MyAI.Faint(FaintTime));
+            MyAI.OnFaint(FaintTime);
 
             Destroy(Other.gameObject);
         }
