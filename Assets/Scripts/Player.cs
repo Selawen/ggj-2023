@@ -160,7 +160,8 @@ public class Player : MonoBehaviour
         {
             Gizmos.color = Color.green;
         }
-        Gizmos.DrawLine(transform.position, transform.position + new Vector3(MoveDir.x, MoveDir.y, 0));
+
+        Gizmos.DrawLine(transform.position, transform.position + (new Vector3(MoveDir.x, MoveDir.y, 0) * 0.6f));
     }
     #endregion
 
