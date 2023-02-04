@@ -19,6 +19,10 @@ public class Player : MonoBehaviour
 
     [Header("Player Infos"), SerializeField]
     PlayerNumber PlayerNumber = PlayerNumber.None;
+    [SerializeField]
+    float FaintTime = 5.0f;
+    [SerializeField]
+    bool IsFaint = false;
 
     //Select PlayerTypes
     [SerializeField]
