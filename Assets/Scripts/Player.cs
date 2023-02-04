@@ -15,6 +15,8 @@ public enum PlayerType
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private LayerMask wallMask;
+
     [Header("Player Infos"), SerializeField]
     PlayerNumber PlayerNumber = PlayerNumber.None;
 
@@ -30,6 +32,9 @@ public class Player : MonoBehaviour
         get { return movespeed; }
         set { movespeed = value; }
     }
+
+    [SerializeField]
+    Vector2 MoveDir;
 
     //PlayerMoveMethod
     Action PlayerMove;
@@ -95,13 +100,23 @@ public class Player : MonoBehaviour
             Vertical = -1;
         else if (Input.GetKey(KeyCode.D))
             Horizontal = 1;
-        else if(Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A))
             Horizontal = -1;
         #endregion
 
-        Vector2 MoveDir = new Vector2(Horizontal, Vertical);
+        MoveDir = new Vector2(Horizontal, Vertical);
 
-        this.gameObject.transform.Translate(MoveDir * MoveSpeed * Time.deltaTime);
+        //Collision test with wall
+        RaycastHit2D hitinfo = Physics2D.Raycast(transform.position, MoveDir, 0.5f, wallMask);
+        if (hitinfo)
+        {
+            Debug.Log($"Wall!");
+        }
+
+        else
+        {
+            this.gameObject.transform.Translate(MoveDir * MoveSpeed * Time.deltaTime);
+        }
     }
 
     private void MovePlayer2()
@@ -120,9 +135,32 @@ public class Player : MonoBehaviour
             Horizontal = -1;
         #endregion
 
-        Vector2 MoveDir = new Vector2(Horizontal, Vertical);
+        MoveDir = new Vector2(Horizontal, Vertical);
 
-        this.gameObject.transform.Translate(MoveDir * MoveSpeed * Time.deltaTime);
+        //Collision test with wall
+        RaycastHit2D hitinfo = Physics2D.Raycast(transform.position, MoveDir, 0.5f, wallMask);
+        if (hitinfo)
+        {
+            Debug.Log($"Wall!"); 
+        }
+
+        else
+        {
+            this.gameObject.transform.Translate(MoveDir * MoveSpeed * Time.deltaTime);
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (Physics2D.Raycast(transform.position, MoveDir, 0.5f, wallMask))
+        {
+            Gizmos.color = Color.red;
+        }
+        else
+        {
+            Gizmos.color = Color.green;
+        }
+        Gizmos.DrawLine(transform.position, transform.position + new Vector3(MoveDir.x, MoveDir.y, 0));
     }
     #endregion
 
@@ -143,7 +181,7 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D Other)
     {
         //Touch The ChangeButton
-        if(Other.CompareTag("ChangeButton"))
+        if (Other.CompareTag("ChangeButton"))
         {
             GameManager.Ins.ChangerType();
         }
