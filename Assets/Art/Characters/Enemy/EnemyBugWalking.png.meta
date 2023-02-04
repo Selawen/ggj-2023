@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: 3984d50fccfc93c42b55827c8654219b
+guid: 64aa93ec565bb0e46b00e5a20f68ad54
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8361673485358267534
-    second: EnemyBugWalking 1_0
+      213: 4342816492580003079
+    second: EnemyBugWalking_0
   - first:
-      213: 3445052873134945596
-    second: EnemyBugWalking 1_1
+      213: 3726546236390807762
+    second: EnemyBugWalking_1
   - first:
-      213: 8440499668662742839
-    second: EnemyBugWalking 1_2
+      213: -5964553931852026223
+    second: EnemyBugWalking_2
   - first:
-      213: 2030043677356700948
-    second: EnemyBugWalking 1_3
+      213: 7001886184210692390
+    second: EnemyBugWalking_3
   - first:
-      213: 8820363218588132806
-    second: EnemyBugWalking 1_4
+      213: -4177299385003751222
+    second: EnemyBugWalking_4
   - first:
-      213: -810474564737009016
-    second: EnemyBugWalking 1_5
+      213: 7893995259584410717
+    second: EnemyBugWalking_5
   - first:
-      213: 7367542930645767432
-    second: EnemyBugWalking 1_6
+      213: -5647637170114378496
+    second: EnemyBugWalking_6
   - first:
-      213: 5790636954606365471
-    second: EnemyBugWalking 1_7
+      213: -7670299252534240108
+    second: EnemyBugWalking_7
   - first:
-      213: -1740977950021445010
-    second: EnemyBugWalking 1_8
+      213: 8627086913325397406
+    second: EnemyBugWalking_8
   - first:
-      213: -7796913626806227403
-    second: EnemyBugWalking 1_9
+      213: 8728368206672425855
+    second: EnemyBugWalking_9
   - first:
-      213: -3731759078785774238
-    second: EnemyBugWalking 1_10
+      213: 8916227567625724203
+    second: EnemyBugWalking_10
   - first:
-      213: 5687866075996459196
-    second: EnemyBugWalking 1_11
+      213: 4471654508869579505
+    second: EnemyBugWalking_11
   - first:
-      213: 433962556828930904
-    second: EnemyBugWalking 1_12
+      213: 2404520798949311262
+    second: EnemyBugWalking_12
   - first:
-      213: 5910567518990596530
-    second: EnemyBugWalking 1_13
+      213: -9076644384331019438
+    second: EnemyBugWalking_13
   - first:
-      213: 557702760264034081
-    second: EnemyBugWalking 1_14
+      213: -1868285490247229549
+    second: EnemyBugWalking_14
   - first:
-      213: -6760066143577985292
-    second: EnemyBugWalking 1_15
+      213: 8765123733340010152
+    second: EnemyBugWalking_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EnemyBugWalking 1_0
+      name: EnemyBugWalking_0
       rect:
         serializedVersion: 2
         x: 0
@@ -153,17 +153,38 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8cf49e9bb1aa0470800000000000000
-      internalID: 8361673485358267534
+      spriteID: 70d50fc3798c44c30800000000000000
+      internalID: 4342816492580003079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyBugWalking 1_1
+      name: EnemyBugWalking_1
       rect:
         serializedVersion: 2
-        x: 256
+        x: 255
+        y: 768
+        width: 257
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d89423de0a57b330800000000000000
+      internalID: 3726546236390807762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyBugWalking_2
+      rect:
+        serializedVersion: 2
+        x: 509
         y: 768
         width: 256
         height: 256
@@ -174,35 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c35b5afd5594fcf20800000000000000
-      internalID: 3445052873134945596
+      spriteID: 19eec40fcc5a93da0800000000000000
+      internalID: -5964553931852026223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyBugWalking 1_2
-      rect:
-        serializedVersion: 2
-        x: 510
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73fe17d9abda22570800000000000000
-      internalID: 8440499668662742839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemyBugWalking 1_3
+      name: EnemyBugWalking_3
       rect:
         serializedVersion: 2
         x: 768
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 415bf5b08f92c2c10800000000000000
-      internalID: 2030043677356700948
+      spriteID: 629f79f0362bb2160800000000000000
+      internalID: 7001886184210692390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyBugWalking 1_4
+      name: EnemyBugWalking_4
       rect:
         serializedVersion: 2
         x: 0
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c5edd17d99386a70800000000000000
-      internalID: 8820363218588132806
+      spriteID: ac8c46477504706c0800000000000000
+      internalID: -4177299385003751222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyBugWalking 1_5
+      name: EnemyBugWalking_5
       rect:
         serializedVersion: 2
         x: 256
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88a7c5d6dad90c4f0800000000000000
-      internalID: -810474564737009016
+      spriteID: d54752a4dda1d8d60800000000000000
+      internalID: 7893995259584410717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyBugWalking 1_6
+      name: EnemyBugWalking_6
       rect:
         serializedVersion: 2
         x: 512
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 805d490b245ce3660800000000000000
-      internalID: 7367542930645767432
+      spriteID: 0054a0f8aef8f91b0800000000000000
+      internalID: -5647637170114378496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyBugWalking 1_7
+      name: EnemyBugWalking_7
       rect:
         serializedVersion: 2
         x: 768
@@ -300,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1bef8e41a97c5050800000000000000
-      internalID: 5790636954606365471
+      spriteID: 49c90c3087f9d8590800000000000000
+      internalID: -7670299252534240108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyBugWalking 1_8
+      name: EnemyBugWalking_8
       rect:
         serializedVersion: 2
         x: 0
@@ -321,123 +321,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6a1f2f47cdc6d7e0800000000000000
-      internalID: -1740977950021445010
+      spriteID: e957e23e6d199b770800000000000000
+      internalID: 8627086913325397406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyBugWalking 1_9
-      rect:
-        serializedVersion: 2
-        x: 257
-        y: 256
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53eefc1cd5ccbc390800000000000000
-      internalID: -7796913626806227403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemyBugWalking 1_10
-      rect:
-        serializedVersion: 2
-        x: 511
-        y: 255
-        width: 258
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 1, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26d82a9b3e0263cc0800000000000000
-      internalID: -3731759078785774238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemyBugWalking 1_11
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 256
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb093cd7f0c5fee40800000000000000
-      internalID: 5687866075996459196
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemyBugWalking 1_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 853db9d65aeb50600800000000000000
-      internalID: 433962556828930904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemyBugWalking 1_13
+      name: EnemyBugWalking_9
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
-        width: 258
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b9756ec7dd860250800000000000000
-      internalID: 5910567518990596530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemyBugWalking 1_14
-      rect:
-        serializedVersion: 2
-        x: 513
-        y: 0
+        y: 256
         width: 256
         height: 256
       alignment: 0
@@ -447,17 +342,59 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 127eac3a4bb5db700800000000000000
-      internalID: 557702760264034081
+      spriteID: f73f58b93a4612970800000000000000
+      internalID: 8728368206672425855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyBugWalking 1_15
+      name: EnemyBugWalking_10
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2160e88bbdccbb70800000000000000
+      internalID: 8916227567625724203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyBugWalking_11
       rect:
         serializedVersion: 2
         x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2f17f75128e0e30800000000000000
+      internalID: 4471654508869579505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyBugWalking_12
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
         width: 256
         height: 256
@@ -468,8 +405,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fea3e5a8ab6f22a0800000000000000
-      internalID: -6760066143577985292
+      spriteID: e13896c4de29e5120800000000000000
+      internalID: 2404520798949311262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyBugWalking_13
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25bc767c508490280800000000000000
+      internalID: -9076644384331019438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyBugWalking_14
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f1cc6ce348216e0800000000000000
+      internalID: -1868285490247229549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyBugWalking_15
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 0
+        width: 253
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6b31a8899f3a970800000000000000
+      internalID: 8765123733340010152
       vertices: []
       indices: 
       edges: []
