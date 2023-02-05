@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Image))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class Tree : MonoBehaviour
 {
     public List<Sprite> treeStages;
@@ -11,13 +11,13 @@ public class Tree : MonoBehaviour
     public float growTime;
 
     LevelManager manager;
-    Image currentImage;
+    SpriteRenderer currentImage;
 
     // Start is called before the first frame update
     void Start()
     {
         manager = FindObjectOfType(typeof(LevelManager)) as LevelManager;
-        currentImage = GetComponent<Image>();
+        currentImage = GetComponent<SpriteRenderer>();
 
         StartCoroutine(GrowTree());
     }
