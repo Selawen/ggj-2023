@@ -14,14 +14,25 @@ public class Unit : MonoBehaviour
 
     Coroutine StateCoroutine;
 
+    private float originalSpeed;
+
     public void OnFaint(float FaintTime)
     {
+        if (TryGetComponent(out Animator a)) 
+        {
+            originalSpeed = a.speed;
+            a.speed = 0;
+        }
+
         if (StateCoroutine == null)
             StateCoroutine = StartCoroutine(Faint(FaintTime));
     }
 
     void OffFaint()
     {
+        if (TryGetComponent(out Animator a))  
+            a.speed = originalSpeed;
+
         StopCoroutine(StateCoroutine);
         StateCoroutine = null;
     }
