@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Maps/Big_2_Enemy_7_water.unity
     guid: c7271b0a040567545b6469e70ed8da7d
+  - enabled: 1
+    path: Assets/Scenes/Maps/Medium_3_Enemies_5_Water.unity
+    guid: ff48f724d4fff5543b7fe7b759051de2
   m_configObjects: {}
