@@ -226,48 +226,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRakeAttack_4
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 785
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a453b09056419310800000000000000
-      internalID: 1409985470182675622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerRakeAttack_5
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 777
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bfc375cde2baea450800000000000000
-      internalID: 6102002762887150843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: PlayerRakeAttack_6
       rect:
         serializedVersion: 2
