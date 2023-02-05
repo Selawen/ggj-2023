@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
             }
 
             Camera.main.transform.position = PlayerList[0].transform.position +
-                ((PlayerList[1].transform.position - PlayerList[0].transform.position) / 2) + new Vector3(0, 0, -10);
+                ((PlayerList[1].transform.position - PlayerList[0].transform.position) / 2) + new Vector3(0, 0, -50);
         }
 
         if (totalWaterInLevel == 0)
