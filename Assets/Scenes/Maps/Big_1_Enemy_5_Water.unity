@@ -204,7 +204,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &292217198
 PrefabInstance:
@@ -378,6 +378,10 @@ PrefabInstance:
     - target: {fileID: 5129116477956073966, guid: f9bad40975e901a4690eca4da05f4319, type: 3}
       propertyPath: movespeed
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5129116477956073967, guid: f9bad40975e901a4690eca4da05f4319, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9bad40975e901a4690eca4da05f4319, type: 3}
@@ -628,6 +632,10 @@ PrefabInstance:
     - target: {fileID: 2330305828380053965, guid: fb906785a0243be43809009f0c5dbad2, type: 3}
       propertyPath: m_Name
       value: bug
+      objectReference: {fileID: 0}
+    - target: {fileID: 2330305828380053969, guid: fb906785a0243be43809009f0c5dbad2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2330305828380053970, guid: fb906785a0243be43809009f0c5dbad2, type: 3}
       propertyPath: movespeed
@@ -19183,6 +19191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 907b704362dc77543a86faaf826511e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   ScoreText: {fileID: 1022375966}
   levelCompleteText: {fileID: 1022375968}
 --- !u!4 &1718430170
@@ -19206,6 +19215,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2645508827862708416, guid: 53be9846ea7289f4383a8f901699e4e5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2645508827862708417, guid: 53be9846ea7289f4383a8f901699e4e5, type: 3}
       propertyPath: movespeed
       value: 1
