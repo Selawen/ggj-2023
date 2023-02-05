@@ -142,7 +142,7 @@ public class Player : Unit
 
         else
         {
-
+            //SoundMgr.In.PlaySound("footsteps");
             this.gameObject.transform.Translate(MoveDir * MoveSpeed * Time.deltaTime);
         }
     }
@@ -218,6 +218,7 @@ public class Player : Unit
     private void HittingEnemy(GameObject OtherEnemy)
     {
         OtherEnemy.GetComponent<BugAI>().OnFaint(4.0f);
+        SoundMgr.In.PlaySound("BugSplat");
     }
 
     private void GettingWater(GameObject OtherWater)
