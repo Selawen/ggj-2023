@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -26,5 +27,11 @@ public class LevelManager : MonoBehaviour
     public void LevelComplete(int completedLevel)
     {
         completedLevels.Add(completedLevel);
+    }
+
+    public void ResetProgress()
+    {
+        completedLevels = new List<int>();
+        SceneManager.LoadScene(0);
     }
 }

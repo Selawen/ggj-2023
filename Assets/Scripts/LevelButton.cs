@@ -49,7 +49,7 @@ public class LevelButton : MonoBehaviour
             if (completed)
             {
                 rootStartColour = gradientStart;
-                float t = 1.0f / (darkeningFraction + 1.0f);
+                float t = 1.0f / (darkeningFraction);
                 rootEndColour = Color.Lerp(rootStartColour, gradientEnd, t);
                 GetComponent<Image>().color = completedColour;
             }
@@ -59,7 +59,7 @@ public class LevelButton : MonoBehaviour
         else
         {
             float startT;
-            startT = 1.0f/ (darkeningFraction + 1.0f);
+            startT = 1.0f / (darkeningFraction + 1.0f);
             startT *= Mathf.Max(rootDepth, 1.0f);
             float endT;
             endT = 1.0f / (darkeningFraction) * Mathf.Max(rootDepth, 1.0f);
@@ -100,9 +100,12 @@ public class LevelButton : MonoBehaviour
     public IEnumerator activateButton()
     {
         StartCoroutine(ActivationEffect());
+        
         yield return new WaitForSeconds(activationDelay);
         Button button = gameObject.GetComponent<Button>();
         button.interactable = true;
+
+        yield return new WaitForSeconds(activationDelay * 0.5f);
 
         if (completed)
         {
@@ -110,12 +113,6 @@ public class LevelButton : MonoBehaviour
 
             foreach (LevelButton g in levelsToActivate)
             {
-                GameObject newRoot = Instantiate(rootPrefab);
-                RootSegment root = newRoot.GetComponent<RootSegment>();
-                root.SetColour(rootStartColour, rootEndColour);
-
-                root.Grow(transform.position, g.transform.position, activationDelay, rootWidth);
-
                 g.StartActivation();
             }
         }
@@ -133,6 +130,18 @@ public class LevelButton : MonoBehaviour
         }
 
         transform.localScale = originalScale * activatedScale;
+
+        if (completed)
+        {
+            foreach (LevelButton g in levelsToActivate)
+            {
+                GameObject newRoot = Instantiate(rootPrefab);
+                RootSegment root = newRoot.GetComponent<RootSegment>();
+                root.SetColour(rootStartColour, rootEndColour);
+
+                root.Grow(transform.position, g.transform.position, activationDelay, rootWidth);
+            }
+        }
     }
 
     private void OnValidate()
