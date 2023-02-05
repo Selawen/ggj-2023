@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Maps/Big_1_Enemy_5_Water.unity
     guid: dc62903de28ecf34aa06fdfb9041d319
   - enabled: 1
+    path: Assets/Scenes/Maps/Middle_3_Enemy_7_Water.unity
+    guid: 16a6af45acddbd94dbaa52dda3c9d07f
+  - enabled: 1
     path: Assets/Scenes/Maps/Medium_2_Enemies_7_Water.unity
     guid: d432859f240a33c41aa028af562f939d
   - enabled: 1
