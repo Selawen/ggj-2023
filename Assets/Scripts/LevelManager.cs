@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    public bool gameStarted = false;
+
     public List<int> completedLevels;
 
     public float amountOfLevels;
