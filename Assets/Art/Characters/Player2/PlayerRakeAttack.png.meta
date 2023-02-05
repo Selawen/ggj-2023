@@ -47,6 +47,12 @@ TextureImporter:
   - first:
       213: 3458389806998439774
     second: PlayerRakeAttack_14
+  - first:
+      213: 7619835796551727201
+    second: PlayerRakeAttack_15
+  - first:
+      213: -130269730918841077
+    second: PlayerRakeAttack_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -140,9 +146,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 22
-        y: 777
+        y: 790
         width: 222
-        height: 241
+        height: 228
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,9 +167,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 272
-        y: 785
+        y: 794
         width: 215
-        height: 237
+        height: 228
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +229,10 @@ TextureImporter:
       name: PlayerRakeAttack_4
       rect:
         serializedVersion: 2
-        x: 13
-        y: 541
-        width: 195
-        height: 227
+        x: 360
+        y: 785
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +250,10 @@ TextureImporter:
       name: PlayerRakeAttack_5
       rect:
         serializedVersion: 2
-        x: 263
-        y: 543
-        width: 195
-        height: 228
+        x: 109
+        y: 777
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +313,10 @@ TextureImporter:
       name: PlayerRakeAttack_8
       rect:
         serializedVersion: 2
-        x: 11
-        y: 274
-        width: 200
-        height: 229
+        x: 13
+        y: 541
+        width: 195
+        height: 227
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,10 +334,10 @@ TextureImporter:
       name: PlayerRakeAttack_9
       rect:
         serializedVersion: 2
-        x: 242
-        y: 262
-        width: 201
-        height: 225
+        x: 263
+        y: 543
+        width: 195
+        height: 228
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,10 +355,10 @@ TextureImporter:
       name: PlayerRakeAttack_10
       rect:
         serializedVersion: 2
-        x: 485
-        y: 266
-        width: 202
-        height: 226
+        x: 11
+        y: 274
+        width: 200
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,10 +376,10 @@ TextureImporter:
       name: PlayerRakeAttack_11
       rect:
         serializedVersion: 2
-        x: 719
-        y: 267
-        width: 219
-        height: 226
+        x: 242
+        y: 262
+        width: 201
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,9 +397,9 @@ TextureImporter:
       name: PlayerRakeAttack_12
       rect:
         serializedVersion: 2
-        x: 11
-        y: 22
-        width: 244
+        x: 485
+        y: 266
+        width: 202
         height: 226
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -412,9 +418,9 @@ TextureImporter:
       name: PlayerRakeAttack_13
       rect:
         serializedVersion: 2
-        x: 286
-        y: 20
-        width: 248
+        x: 719
+        y: 267
+        width: 219
         height: 226
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -433,6 +439,48 @@ TextureImporter:
       name: PlayerRakeAttack_14
       rect:
         serializedVersion: 2
+        x: 11
+        y: 22
+        width: 244
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5749f4c43baeff20800000000000000
+      internalID: 3458389806998439774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerRakeAttack_15
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 20
+        width: 248
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168754c09481fb960800000000000000
+      internalID: 7619835796551727201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerRakeAttack_16
+      rect:
+        serializedVersion: 2
         x: 597
         y: 23
         width: 248
@@ -444,8 +492,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5749f4c43baeff20800000000000000
-      internalID: 3458389806998439774
+      spriteID: b05c893be50313ef0800000000000000
+      internalID: -130269730918841077
       vertices: []
       indices: 
       edges: []

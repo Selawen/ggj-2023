@@ -41,6 +41,12 @@ TextureImporter:
   - first:
       213: -8033346279429902369
     second: PlayerRakeWalk_12
+  - first:
+      213: -1064308758811853248
+    second: PlayerRakeWalk_13
+  - first:
+      213: 5414000322216255931
+    second: PlayerRakeWalk_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -134,9 +140,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 768
+        y: 794
         width: 220
-        height: 252
+        height: 226
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +223,10 @@ TextureImporter:
       name: PlayerRakeWalk_4
       rect:
         serializedVersion: 2
-        x: 4
-        y: 550
-        width: 243
-        height: 223
+        x: 86
+        y: 787
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,10 +244,10 @@ TextureImporter:
       name: PlayerRakeWalk_5
       rect:
         serializedVersion: 2
-        x: 254
-        y: 551
-        width: 249
-        height: 226
+        x: 4
+        y: 550
+        width: 243
+        height: 223
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,10 +265,10 @@ TextureImporter:
       name: PlayerRakeWalk_6
       rect:
         serializedVersion: 2
-        x: 502
-        y: 553
-        width: 220
-        height: 233
+        x: 254
+        y: 551
+        width: 218
+        height: 226
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +286,10 @@ TextureImporter:
       name: PlayerRakeWalk_7
       rect:
         serializedVersion: 2
-        x: 780
-        y: 555
-        width: 218
-        height: 229
+        x: 502
+        y: 560
+        width: 220
+        height: 226
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,10 +307,10 @@ TextureImporter:
       name: PlayerRakeWalk_8
       rect:
         serializedVersion: 2
-        x: 33
-        y: 293
-        width: 223
-        height: 230
+        x: 780
+        y: 555
+        width: 218
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,10 +328,10 @@ TextureImporter:
       name: PlayerRakeWalk_9
       rect:
         serializedVersion: 2
-        x: 279
-        y: 297
-        width: 223
-        height: 230
+        x: 587
+        y: 553
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,10 +349,10 @@ TextureImporter:
       name: PlayerRakeWalk_10
       rect:
         serializedVersion: 2
-        x: 525
-        y: 301
-        width: 218
-        height: 228
+        x: 33
+        y: 293
+        width: 223
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,10 +370,10 @@ TextureImporter:
       name: PlayerRakeWalk_11
       rect:
         serializedVersion: 2
-        x: 779
-        y: 304
-        width: 218
-        height: 232
+        x: 279
+        y: 297
+        width: 223
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -385,6 +391,48 @@ TextureImporter:
       name: PlayerRakeWalk_12
       rect:
         serializedVersion: 2
+        x: 525
+        y: 301
+        width: 218
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfefd01f12d38090800000000000000
+      internalID: -8033346279429902369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerRakeWalk_13
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 304
+        width: 218
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ebea3a2d0da31f0800000000000000
+      internalID: -1064308758811853248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerRakeWalk_14
+      rect:
+        serializedVersion: 2
         x: 17
         y: 13
         width: 221
@@ -396,8 +444,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdfefd01f12d38090800000000000000
-      internalID: -8033346279429902369
+      spriteID: bb1ec83cb94622b40800000000000000
+      internalID: 5414000322216255931
       vertices: []
       indices: 
       edges: []

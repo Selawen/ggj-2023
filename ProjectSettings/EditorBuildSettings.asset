@@ -12,14 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Maps/Small_1_Enemy_1_Water.unity
     guid: 9397e5eeab84ee3468a5ae36dce4e755
   - enabled: 1
-    path: Assets/Scenes/Maps/small_1_Enemy_3_water.unity
-    guid: 3abfce9febaac524aae0bfea0119d9cc
+    path: Assets/Scenes/Maps/small_1__Enemy_3_water.unity
+    guid: 04225d172522a7a47bda78aaf38e787d
   - enabled: 1
     path: Assets/Scenes/Maps/small_2_Enemy_3_water.unity
     guid: b85acb4d18b3859478a9db7012e21766
   - enabled: 1
-    path: Assets/Scenes/Maps/Small_2_Enemy_7_Water.unity
-    guid: 931eba5f85b5e534c8f27208a1f68a51
+    path: Assets/Scenes/Maps/small_1_Enemy_3_water.unity
+    guid: 3abfce9febaac524aae0bfea0119d9cc
   - enabled: 1
     path: Assets/Scenes/Maps/Big_1_Enemy_5_Water.unity
     guid: dc62903de28ecf34aa06fdfb9041d319
@@ -27,21 +27,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Maps/Middle_3_Enemy_7_Water.unity
     guid: 16a6af45acddbd94dbaa52dda3c9d07f
   - enabled: 1
+    path: Assets/Scenes/Maps/Small_2_Enemy_7_Water.unity
+    guid: 931eba5f85b5e534c8f27208a1f68a51
+  - enabled: 1
     path: Assets/Scenes/Maps/Medium_2_Enemies_7_Water.unity
     guid: d432859f240a33c41aa028af562f939d
   - enabled: 1
     path: Assets/Scenes/Maps/Small_2_Enemy_5_Water.unity
     guid: d65aaecb798a6004ea7f7d9e06312b59
   - enabled: 1
-    path: Assets/Scenes/Maps/Big_2_Enemy_7_water.unity
-    guid: c7271b0a040567545b6469e70ed8da7d
-  - enabled: 1
     path: Assets/Scenes/Maps/Medium_3_Enemies_5_Water.unity
     guid: ff48f724d4fff5543b7fe7b759051de2
   - enabled: 1
+    path: Assets/Scenes/Maps/Big_2_Enemy_7_water.unity
+    guid: c7271b0a040567545b6469e70ed8da7d
+  - enabled: 1
     path: Assets/Scenes/Maps/Big_3_Enemy_7_water.unity
     guid: d69bf8474a34c9f4c9bb4c6a5b35081b
-  - enabled: 1
-    path: Assets/Scenes/Maps/small_1__Enemy_3_water.unity
-    guid: 04225d172522a7a47bda78aaf38e787d
   m_configObjects: {}

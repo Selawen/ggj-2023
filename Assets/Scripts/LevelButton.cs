@@ -101,7 +101,7 @@ public class LevelButton : MonoBehaviour
     {
         StartCoroutine(ActivationEffect());
         
-        yield return new WaitForSeconds(activationDelay);
+        yield return new WaitForSeconds(activationDelay*0.5f);
         Button button = gameObject.GetComponent<Button>();
         button.interactable = true;
 
